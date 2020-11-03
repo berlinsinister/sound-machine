@@ -1,0 +1,114 @@
+:root {
+    --crimson: #FF003F;
+    --yellow: #ffc300;
+    --dark-purple: #180317;
+}
+
+body {
+    background-color: var(--dark-purple);
+    font-family: 'Syne', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#drum-machine {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    background: linear-gradient(180deg, var(--dark-purple), #540031, #7c0031);
+    box-shadow: 5px 5px 5px 0px black;
+}
+
+#pads {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#row-1, #row-2, #row-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drum-pad {
+    width: 75px;
+    height: 75px;
+    background-color: var(--crimson);
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 20pt;
+    margin: 2px;
+    color: white;
+    box-shadow: 5px 5px 5px 0px black;
+    font-family: 'Syne', Arial, Helvetica, sans-serif;
+}
+
+.drum-pad:focus {
+    outline: none;    
+}
+
+.drum-pad-click {
+    background-color: var(--yellow);
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.range-class {
+    padding: 20px;
+}
+
+#range-value {
+    text-align: center;
+}
+
+#range {
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: white;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+#range:hover {
+    opacity: 1;
+}
+  
+#range:disabled {
+    opacity: 0.1;
+}
+  
+#range::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--yellow);
+    cursor: pointer;
+}
+
+#on, #off, #on-2, #off-2 {
+    width: 30px;
+    background-color: var(--yellow);
+    border: none;
+    padding: 5px;
+    color: white;
+    font-family: 'Syne', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#on:focus, #off:focus, #on-2:focus, #off-2:focus {
+    outline: none;
+}
+
+#on:hover, #off:hover, #on-2:hover, #off-2:hover {
+    background-color: #ffd54d;
+}

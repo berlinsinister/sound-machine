@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Drums</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+</head>
+
+<body>
+    <div id="drum-machine">
+        <div id="pads">
+            <div id="row-1">
+
+                <audio id="Q" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+                <div>
+                    <button class="drum-pad">Q</button>
+                </div>
+
+                <audio id="W" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/alarms/winding_alarm_clock.ogg"></audio>
+                <div>
+                    <button class="drum-pad">W</button>
+                </div>
+
+                <audio id="E" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/doors/locked_doorknob_jiggle.ogg"></audio>
+                <div>
+                    <button class="drum-pad">E</button>
+                </div>
+
+            </div>
+            <div id="row-2">
+
+                <audio id="A" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/foley/paper_ripping.ogg"></audio>
+                <div>
+                    <button class="drum-pad">A</button>
+                </div>
+
+                <audio id="S" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/tools/18v_cordless_drill_switch.ogg"></audio>
+                <div>
+                    <button class="drum-pad">S</button>
+                </div>
+
+                <audio id="D" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/household/kitchen_noises.ogg"></audio>
+                <div>
+                    <button class="drum-pad">D</button>
+                </div>
+
+            </div>
+            <div id="row-3">
+
+                <audio id="Z" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/sports/billiard_balls_hit.ogg"></audio>
+                <div>
+                    <button class="drum-pad">Z</button>
+                </div>
+
+                <audio id="X" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/sports/frisbee_catch.ogg"></audio>
+                <div>
+                    <button class="drum-pad">X</button>
+                </div>
+
+                <audio id="C" class="audio-player"
+                    src="https://actions.google.com/sounds/v1/sports/ping_pong_ball_hit.ogg"></audio>
+                <div>
+                    <button class="drum-pad">C</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="display">
+            <div class="range-class">
+                <span>Sound?&nbsp;&nbsp;</span>
+                <button id="on">on</button>
+                <button id="off">off</button>
+            </div>
+            <div class="range-class" id="range-value">Welcome</div>
+            <div class="range-class">
+                <input type="range" id="range" min="0" max="100">
+            </div>
+            <div class="range-class">
+                <span>Bank?&nbsp;&nbsp;</span>
+                <button id="on-2">on</button>
+                <button id="off-2">off</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="index.js"></script>
+
+</html>
