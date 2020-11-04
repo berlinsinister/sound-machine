@@ -1,3 +1,7 @@
 ## Sound Machine aka Drum Machine
-One of the final task projects from freeCodeCamp Frontend Libraries Course.
-Using HTML5, CSS3 and jQuery
+**freeCodeCamp** task: [Drum Machine](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine)
+<br /><br />
+Languages:
+- HTML5
+- CSS3
+- jQuery
